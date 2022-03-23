@@ -87,8 +87,9 @@ body {
   border: 1px solid #10b981;
   border-radius: 5px;
   background-color: #10b981;
-  font-size: 0.9rem;
   font-weight: 800;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 .top button i {
@@ -118,9 +119,9 @@ body {
 
 .bottom-grid .slot {
   background-color: #273549;
-  padding: 0.7rem;
+  padding: 0.625rem;
   border-radius: 5px;
-  color: #fff;
+  color: #10b981;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -131,5 +132,21 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   font-family: sans-serif;
+  border: 2px solid #3b4a5ec5;
+  -webkit-transition: border 0.5s;
+  transition: border 0.5s;
+}
+
+.bottom-grid .slot i {
+  color: #fff;
+}
+
+.bottom-grid .slot:hover {
+  border: 2px solid #3b4a5e15;
+}
+
+.bottom-grid .slot:active {
+  border: 2px solid rgba(255, 255, 255, 0.088);
+  background-color: #1f2937;
 }
 /*# sourceMappingURL=style.css.map */
