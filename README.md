@@ -1,2 +1,3 @@
 # Password Generator
- Never use an unsecure password again
+
+Never use an unsecure password again

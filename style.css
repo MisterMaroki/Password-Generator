@@ -20,12 +20,12 @@ body {
   margin: 0 auto;
   background: #0e0e0e;
   background-image: url(https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX31129765.jpg);
-  background-blend-mode: color-dodge;
+  background-blend-mode: overlay;
   color: #ffffff;
 }
 
 .container {
-  max-width: 600px;
+  max-width: 550px;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -35,7 +35,7 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-top: 25vh;
-  background: #1f2937;
+  background: #1f2937d5;
   padding: 1.5rem;
   border-radius: 0.5rem;
 }
@@ -79,20 +79,30 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   -ms-flex-item-align: start;
       align-self: flex-start;
   color: #fff;
-  padding: 0.7rem 1.25rem;
-  border: none;
+  padding: 0.6rem 1.25rem;
+  border: 1px solid #10b981;
   border-radius: 5px;
   background-color: #10b981;
-  font-weight: lighter;
+  font-size: 0.9rem;
+  font-weight: 800;
 }
 
 .top button i {
-  padding: 0;
-  margin-right: 0.9rem;
+  margin-right: 0.7rem;
+}
+
+.top button:hover {
+  background-color: #10b981cb;
+  border: 1px solid rgba(255, 255, 255, 0.493);
+}
+
+.top button:active {
+  -webkit-transform: scale(0.97);
+          transform: scale(0.97);
 }
 
 .bottom-grid {
@@ -106,10 +116,10 @@ body {
   grid-row-gap: 20px;
 }
 
-.bottom-grid #slot {
+.bottom-grid .slot {
   background-color: #273549;
-  padding: 0.5rem;
-  border-radius: 10px;
+  padding: 0.7rem;
+  border-radius: 5px;
   color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
