@@ -67,6 +67,15 @@ body {
   line-height: 2rem;
 }
 
+@media (max-width: 400px) {
+  .top :root {
+    font-size: 12px;
+  }
+  .top h1 {
+    font-size: 1.6rem;
+  }
+}
+
 .top p {
   margin-bottom: 2rem;
   letter-spacing: normal;
@@ -148,5 +157,11 @@ body {
 .bottom-grid .slot:active {
   border: 2px solid rgba(255, 255, 255, 0.088);
   background-color: #1f2937;
+}
+
+@media (max-width: 500px) {
+  .slot {
+    font-size: 0.8rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */
