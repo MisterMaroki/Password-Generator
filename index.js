@@ -7,15 +7,14 @@ const slots = document.getElementsByClassName("slot");
 const chars =
 	"0123456789abcdefghijklmnopqrstuvwxyz!@#$%^&*()ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 let generated = false;
-let passwordLength = 9;
 
 generateBtn.addEventListener("click", function () {
 	generated = true;
-	var password = "";
-	var passwordTwo = "";
-	var passwordThree = "";
-	var passwordFour = "";
+
+	let passwordLength = 9;
+
 	function genPass() {
+		let password = "";
 		for (let i = 0; i <= passwordLength; i++) {
 			let randomNumber = Math.floor(Math.random() * chars.length);
 			password += chars.substring(randomNumber, randomNumber + 1);
@@ -23,4 +22,7 @@ generateBtn.addEventListener("click", function () {
 		return password;
 	}
 	slotOne.textContent = genPass();
+	slotTwo.textContent = genPass();
+	slotThree.textContent = genPass();
+	slotFour.textContent = genPass();
 });
