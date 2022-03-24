@@ -16,10 +16,23 @@
 			<div class="top">
 				<h1>Generate a <span>random password</span></h1>
 				<p>Never use an insecure password again.</p>
-				<button id="generate-btn">
-					<i class="fa-solid fa-bolt"></i>Generate passwords
-				</button>
+				<div class="buttons">
+					<button id="generate-btn">
+						<i class="fa-solid fa-bolt"></i>Generate passwords
+					</button>
+					<div class="length-buttons">
+						<p>Length:</p>
+						<button class="length-button" onclick="incrementLen()">
+							<i class="fa-solid fa-angle-up"></i>
+						</button>
+						<p id="password-length">10</p>
+						<button class="length-button" onclick="decrementLen()">
+							<i class="fa-solid fa-angle-down"></i>
+						</button>
+					</div>
+				</div>
 			</div>
+			<h4>Click any password to copy</h4>
 			<div class="bottom-grid">
 				<span class="slot" id="slot-one"
 					><i class="fa-solid fa-ellipsis"></i
