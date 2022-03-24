@@ -61,7 +61,7 @@ generateBtn.addEventListener("click", function () {
 //using getselection() and range methods to add copy function
 const selection = window.getSelection();
 const range = document.createRange();
-slotOne.addEventListener("click", function (e) {
+slotOne.addEventListener("click", function () {
 	if (generated) {
 		range.selectNodeContents(slotOne);
 		selection.removeAllRanges();
