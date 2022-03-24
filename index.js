@@ -75,3 +75,45 @@ slotOne.addEventListener("click", function () {
 		window.getSelection().removeAllRanges();
 	}
 });
+slotTwo.addEventListener("click", function () {
+	if (generated) {
+		range.selectNodeContents(slotTwo);
+		selection.removeAllRanges();
+		selection.addRange(range);
+		const successful = document.execCommand("copy");
+		if (successful) {
+			slotTwo.innerHTML = "Copied!";
+		} else {
+			slotTwo.innerHTML = "Unable to copy!";
+		}
+		window.getSelection().removeAllRanges();
+	}
+});
+slotThree.addEventListener("click", function () {
+	if (generated) {
+		range.selectNodeContents(slotThree);
+		selection.removeAllRanges();
+		selection.addRange(range);
+		const successful = document.execCommand("copy");
+		if (successful) {
+			slotThree.innerHTML = "Copied!";
+		} else {
+			slotThree.innerHTML = "Unable to copy!";
+		}
+		window.getSelection().removeAllRanges();
+	}
+});
+slotFour.addEventListener("click", function () {
+	if (generated) {
+		range.selectNodeContents(slotFour);
+		selection.removeAllRanges();
+		selection.addRange(range);
+		const successful = document.execCommand("copy");
+		if (successful) {
+			slotFour.innerHTML = "Copied!";
+		} else {
+			slotFour.innerHTML = "Unable to copy!";
+		}
+		window.getSelection().removeAllRanges();
+	}
+});
