@@ -52,7 +52,7 @@ body {
 		font-weight: 700;
 		line-height: 2rem;
 	}
-	@media (max-width: 400px) {
+	@media (max-width: 450px) {
 		:root {
 			font-size: 12px;
 		}
@@ -95,7 +95,7 @@ body {
 	grid-column-gap: 20px;
 	grid-row-gap: 20px;
 }
-@media (max-width: 490px) {
+@media (max-width: 510px) {
 	.bottom-grid {
 		display: flex;
 		flex-direction: column;
@@ -127,7 +127,7 @@ body {
 	font-size: 0.8rem;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 510px) {
 	.slot {
 		font-size: 0.8rem;
 	}
@@ -148,9 +148,13 @@ body {
 	}
 	p {
 		margin: auto;
+		margin-right: 10px;
+	}
+	#password-length {
+		margin: auto;
 	}
 }
-@media (max-width: 490px) {
+@media (max-width: 500px) {
 	.buttons {
 		flex-direction: column;
 	}

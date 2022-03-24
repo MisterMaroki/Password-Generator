@@ -77,7 +77,7 @@ body {
   line-height: 2rem;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 450px) {
   .top :root {
     font-size: 12px;
   }
@@ -135,7 +135,7 @@ body {
   grid-row-gap: 20px;
 }
 
-@media (max-width: 490px) {
+@media (max-width: 510px) {
   .bottom-grid {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -184,7 +184,7 @@ body {
   font-size: 0.8rem;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 510px) {
   .slot {
     font-size: 0.8rem;
   }
@@ -221,9 +221,14 @@ body {
 
 .buttons p {
   margin: auto;
+  margin-right: 10px;
 }
 
-@media (max-width: 490px) {
+.buttons #password-length {
+  margin: auto;
+}
+
+@media (max-width: 500px) {
   .buttons {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
