@@ -57,3 +57,21 @@ generateBtn.addEventListener("click", function () {
 	slotThree.textContent = genPass();
 	slotFour.textContent = genPass();
 });
+
+//using getselection() and range methods to add copy function
+const selection = window.getSelection();
+const range = document.createRange();
+slotOne.addEventListener("click", function (e) {
+	if (generated) {
+		range.selectNodeContents(slotOne);
+		selection.removeAllRanges();
+		selection.addRange(range);
+		const successful = document.execCommand("copy");
+		if (successful) {
+			slotOne.innerHTML = "Copied!";
+		} else {
+			slotOne.innerHTML = "Unable to copy!";
+		}
+		window.getSelection().removeAllRanges();
+	}
+});
