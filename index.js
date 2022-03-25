@@ -61,59 +61,30 @@ generateBtn.addEventListener("click", function () {
 //using getselection() and range methods to add copy function
 const selection = window.getSelection();
 const range = document.createRange();
-slotOne.addEventListener("click", function () {
+
+function copyThis(param) {
 	if (generated) {
-		range.selectNodeContents(slotOne);
+		range.selectNodeContents(param);
 		selection.removeAllRanges();
 		selection.addRange(range);
 		const successful = document.execCommand("copy");
 		if (successful) {
-			slotOne.innerHTML = "Copied!";
+			param.innerHTML = "Copied!";
 		} else {
-			slotOne.innerHTML = "Unable to copy!";
+			param.innerHTML = "Unable to copy!";
 		}
 		window.getSelection().removeAllRanges();
 	}
+}
+slotOne.addEventListener("click", function () {
+	copyThis(slotOne);
 });
 slotTwo.addEventListener("click", function () {
-	if (generated) {
-		range.selectNodeContents(slotTwo);
-		selection.removeAllRanges();
-		selection.addRange(range);
-		const successful = document.execCommand("copy");
-		if (successful) {
-			slotTwo.innerHTML = "Copied!";
-		} else {
-			slotTwo.innerHTML = "Unable to copy!";
-		}
-		window.getSelection().removeAllRanges();
-	}
+	copyThis(slotTwo);
 });
 slotThree.addEventListener("click", function () {
-	if (generated) {
-		range.selectNodeContents(slotThree);
-		selection.removeAllRanges();
-		selection.addRange(range);
-		const successful = document.execCommand("copy");
-		if (successful) {
-			slotThree.innerHTML = "Copied!";
-		} else {
-			slotThree.innerHTML = "Unable to copy!";
-		}
-		window.getSelection().removeAllRanges();
-	}
+	copyThis(slotThree);
 });
 slotFour.addEventListener("click", function () {
-	if (generated) {
-		range.selectNodeContents(slotFour);
-		selection.removeAllRanges();
-		selection.addRange(range);
-		const successful = document.execCommand("copy");
-		if (successful) {
-			slotFour.innerHTML = "Copied!";
-		} else {
-			slotFour.innerHTML = "Unable to copy!";
-		}
-		window.getSelection().removeAllRanges();
-	}
+	copyThis(slotFour);
 });
